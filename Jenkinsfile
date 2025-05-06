@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Klooni repo') {
             steps {
-                git 'https://github.com/Aleksandra-Semjonova/test.git'
+                git branch: 'main', url: 'https://github.com/Aleksandra-Semjonova/test.git'
                 // Asenda ülalolev link oma GitHub repo URL-iga
             }
         }
